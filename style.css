@@ -1,0 +1,171 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: 'amblebold';
+  src: url('amble-bold-webfont.woff2') format('woff2'),
+       url('amble-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face
+{
+  font-family: 'open_sansregular';
+  src: url('opensans-regular-webfont.woff2') format('woff2'),
+       url('opensans-regular-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+
+}
+html {
+  font-family: amblebold, serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: open_sansregular, sans-serif;
+  letter-spacing: 2px;
+}
+p
+{
+  line-height: 2;
+}
+h1
+{
+  font-size: 4rem;
+  text-align: center;
+}
+h2 {
+  font-size: 3.5rem;
+}
+p
+ {
+  text-indent: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+ }
+
+ body {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+}
+
+a:link, a:visited {
+  color: #dd4949;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #da8888;
+}
+
+a:active {
+  background: #724040;
+  color: #ee5732f8;
+}
+
+
+ul, ol {
+  margin: 1.6rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid rgb(61, 29, 29);
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: rgb(53, 20, 20);
+}
+
+nav li a:active {
+  color: white;
+  background: rgba(0, 0, 0, 0.473);
+}
